@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: astrafy-464919
+    schema: raw
+    tables:
+      - name: orders_recrutement
+      - name: sales_recrutement

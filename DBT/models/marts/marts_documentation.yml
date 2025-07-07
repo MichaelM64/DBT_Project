@@ -1,0 +1,55 @@
+version: 2
+
+models:
+  - name: sales_2023
+    description: "Creates a copy of the sales table with only the orders from 2023"
+  - name: exercise1
+    description: "Returns the total number of orders in 2023"
+    columns:
+      - name: order_count_2023
+        description: "Calculated from the distinct count of the order_id field in the sales table for the year 2023"
+  - name: exercise2
+    description: "Returns number of orders per month in 2023"
+    columns:
+      - name: month
+        description: "The month of the year"
+      - name: order_count
+        description: "The number of orders in that month"
+  - name: exercise3
+    description: "Returns the number of products per order for each month of the year 2023"
+    columns:  
+      - name: month_year
+        description: "The date in month-year format"
+      - name: total_products
+        description: "Count of rows in the sales table. Each row represents a product in an sales order"
+      - name: total_orders
+        description: "Distinct count of order_id in the sales table. Each order can have multiple products"
+      - name: avg_products_per_order
+        description: "division of total_products by total_orders. Returns the average number of products per order for each month of the year 2023"
+  - name: exercise4
+    description: "Creates a table (1 line per order) for all orders in the year 2022 and 2023 with a qty_product column that gives the total quantity of products in the order"
+    columns:  
+      - name: order_date
+        description: "The date of the order"
+      - name: customer_id
+        description: "The ID of the customer who made the order"
+      - name: order_id
+        description: "The ID of the order"
+      - name: net_sales
+        description: "The total sum of the net sales for the order rounded to 2 decimal places"
+      - name: qty_product
+        description: "The total sum of the column qty (quantity of products) for the order"
+  - name: exercise5
+    description: "Returns the segmentation of orders in 2023 based on the number of previous orders in the past 12 months. (This table answers the question of exercise 5 and 6)"
+    columns:  
+      - name: orders_id
+        description: "The ID of the order"
+      - name: customers_id
+        description: "The ID of the customer who made the order"
+      - name: date_date
+        description: "The date of the order"
+      - name: order_segmentation
+        description: "The segmentation of the order based on the number of previous orders in the past 12 months for the year 2023:
+          - New: 0 previous orders
+          - Returning: 1 to 3 previous orders
+          - VIP: 4 or more previous orders"

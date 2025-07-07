@@ -1,0 +1,17 @@
+name: 'astrafy_project'
+version: '1.0.0'
+
+profile: 'astrafy_project'
+
+model-paths: ["models"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  astrafy_project:
+    marts:
+      +materialized: view
+    lookertables:
+      +materialized: table
