@@ -1,6 +1,6 @@
 # Astrafy Project — DBT & Looker Challenge
 
-🔗 Link to the Looker Studio Dashboard: (Add link here if available)
+🔗 Link to the Looker Studio Dashboard: [(Add link here if available)](https://lookerstudio.google.com/reporting/d98ca459-0cc6-4272-9260-c490f97c8543)
 
 This Git repository contains two main folders: dbt and Looker. The purpose of this document is to explain the structure of the project and the logic behind each component.
 
