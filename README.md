@@ -47,7 +47,7 @@ For the coding challenge, 6 excercies where assigned, this folder contains a .sq
 ```exercise5_6.sql```: Segmentation logic. Both exercises are addressed in this file as they build on the same logic.
 
 
-## 2. models/lookertables: 
+#### 2. models/lookertables: 
 This folder contains combined and cleaned models based on the previous exercises. They are optimized for use in Looker’s semantic layer.
 Following semantic modeling best practices, most logic is handled in dbt to reduce load on the Looker engine and improve performance.
 
