@@ -1,4 +1,4 @@
-# Astrafy Project — DBT & Looker Challenge
+# DBT & Looker Challenge
 
 🔗 Link to the Looker Studio Dashboard: [(Looker Studio Dashboard)](https://lookerstudio.google.com/reporting/d98ca459-0cc6-4272-9260-c490f97c8543)
 
